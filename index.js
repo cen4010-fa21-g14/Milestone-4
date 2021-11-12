@@ -64,10 +64,10 @@ app.use("/api/auth", authRoute);
 app.use("/api/posts", postRoute);
 
 
-app.use(express.static('distantly-near/build'));
+app.use(express.static('distantly-near-main/build'));
 
 app.get('/*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'distantly-near/build', 'index.html'));
+  res.sendFile(path.join(__dirname, 'distantly-near-main/build', 'index.html'));
 });
 
 
