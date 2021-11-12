@@ -9,10 +9,11 @@
 
     <meta http-equiv="Content-Security-Policy"
     content="
-      default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; 
+      default-src 'self' 'unsafe-eval'; 
       style-src   'self' https://fonts.googleapis.com;
       font-src    'self' data: https://fonts.gstatic.com;
       img-src     'self' data: content:;
+      script-src  'self'  'unsafe-inline' 'unsafe-eval';
       media-src   *;
             "
   />
