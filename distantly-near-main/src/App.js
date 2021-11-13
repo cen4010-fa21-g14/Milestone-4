@@ -9,10 +9,11 @@ import Register from "./pages/register/Register";
 import{
   BrowserRouter as Router,
   Switch,
-  Route
-} from "react-router-dom"
+  Route,
+  Redirect 
+} from "react-router-dom";
 import { AuthContext } from "./context/AuthContext";
-import { useContext, Redirect } from "react";
+import { useContext} from "react";
 
 
 function App() {
