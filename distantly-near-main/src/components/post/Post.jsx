@@ -55,7 +55,7 @@ export default function Post({post}) {
                         <span className="postUsername">{user.firstName} {user.lastName}</span>
 
                         <span className="postDate">{format(post.createdAt)}</span>
-                        <span className="postDate">{post.createdAt}</span>
+                        {/* <span className="postDate">{post.createdAt}</span> */}
                     </div>
                     <div className="postTopRight">
                         {/* <MoreVert/> */}
