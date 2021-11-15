@@ -42,8 +42,8 @@ export default function Share() {
                 <img className="shareProfileImg" alt="" src={user.profilePicture ? PF+user.profilePicture : PF+"person/noAvatar.png"}></img>
                 <input className="shareInput" placeholder={"Whats in your mind " + user.username + "?"} ref={desc} />
             </div>
-            {/* <hr className="shareHr"/>
-            {file && (
+            <hr className="shareHr"/>
+            {/* {file && (
           <div className="shareImgContainer">
             <img className="shareImg" src={URL.createObjectURL(file)} alt="" />
             <Cancel className="shareCancelImg" onClick={() => setFile(null)} />
