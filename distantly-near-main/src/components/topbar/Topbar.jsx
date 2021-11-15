@@ -6,7 +6,7 @@ import { AuthContext } from "../../context/AuthContext";
 
 export default function Topbar() {
 
-    const {user} = useContext(AuthContext)
+    const {user, dispatch} = useContext(AuthContext)
     const PF = process.env.REACT_APP_PUBLIC_FOLDER;
 
     const handleLogout = () => {
