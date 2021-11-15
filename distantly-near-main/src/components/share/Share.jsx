@@ -43,12 +43,12 @@ export default function Share() {
                 <input className="shareInput" placeholder={"Whats in your mind " + user.username + "?"} ref={desc} />
             </div>
             <hr className="shareHr"/>
-            {file && (
+            {/* {file && (
           <div className="shareImgContainer">
             <img className="shareImg" src={URL.createObjectURL(file)} alt="" />
             <Cancel className="shareCancelImg" onClick={() => setFile(null)} />
           </div>
-        )}
+        )} */}
             <form className="shareBottom" onSubmit={submitHandler}>
                 <div className="shareOptions">
                     <label htmlFor="file" className="shareOption">
