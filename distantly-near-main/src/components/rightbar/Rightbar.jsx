@@ -77,6 +77,14 @@ export default function Rightbar({ user }) {
           )}
         <h4 className="rightbarTitle">User information</h4>
         <div className="rightbarInfo">
+        <div className="rightbarInfoItem">
+            <span className="rightbarInfoKey">Username:</span>
+            <span className="rightbarInfoValue">{user.username}</span>
+          </div>
+        <div className="rightbarInfoItem">
+            <span className="rightbarInfoKey">Name:</span>
+            <span className="rightbarInfoValue">{user.firstName} {user.lastName}</span>
+          </div>
           <div className="rightbarInfoItem">
             <span className="rightbarInfoKey">City:</span>
             <span className="rightbarInfoValue">{user.city}</span>

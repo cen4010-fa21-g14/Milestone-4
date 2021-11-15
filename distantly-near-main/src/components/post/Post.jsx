@@ -52,7 +52,7 @@ export default function Post({post}) {
                     : PF + "person/noAvatar.png"
                 }></img>
                         </Link>
-                        <span className="postUsername">{user.firstName} {user.lastName}</span>
+                        <span className="postUsername">{user.username}</span>
 
                         <span className="postDate">{format(post.createdAt)}</span>
                         {/* <span className="postDate">{post.createdAt}</span> */}
