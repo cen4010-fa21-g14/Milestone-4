@@ -62,7 +62,11 @@ const UserSchema = new mongoose.Schema({
     from:{
         type: String,
         max: 50
-    }
+    },
+    relationship: {
+        type: Number,
+        enum: [1, 2, 3],
+    },
 },
 {timestamps: true}
 );
