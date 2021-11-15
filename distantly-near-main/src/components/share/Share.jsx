@@ -20,8 +20,8 @@ export default function Share() {
         if (file) {
           const data = new FormData();
           const fileName = Date.now() + file.name;
-          data.append("name", fileName);
           data.append("file", file);
+          data.append("name", fileName);
           newPost.image = fileName;
           console.log(newPost);
           try {
@@ -46,7 +46,7 @@ export default function Share() {
             {file && (
           <div className="shareImgContainer">
             <img className="shareImg" src={URL.createObjectURL(file)} alt="" />
-            <Cancel className="shareCancelImg" onClick={() => setFile(null)} />
+            {/* <Cancel className="shareCancelImg" onClick={() => setFile(null)} /> */}
           </div>
         )}
             <form className="shareBottom" onSubmit={submitHandler}>
