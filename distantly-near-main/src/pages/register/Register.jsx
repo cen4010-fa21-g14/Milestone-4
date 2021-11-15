@@ -3,6 +3,7 @@ import { useRef } from "react";
 import { axiosInstance } from "../../config";
 // import axios from "axios";
 import { useHistory } from "react-router";
+import { Link } from "react-router-dom";
 
 export default function Register() {
     const username = useRef();
@@ -46,8 +47,11 @@ export default function Register() {
                         <input placeholder="Password" required ref={password} className="loginInput" type="password" minLength="6"/>
                         <input placeholder="Password Again" required ref={passwordAgain} className="loginInput" type="password"/>
                         <button className="loginButton" type="submit">Sign Up</button>
-                        <button className="loginRegisterButton">Log into Account</button>
-                    </form>
+                        <button className="loginRegisterButton">
+                        <Link to="/login" style={{textDecoration: 'none', color:'white',display: 'block'}}>
+                        Log into Account
+                        </Link>
+                            </button>                    </form>
                 </div>
             </div>
         </div>
