@@ -40,23 +40,23 @@ app.use(helmet());
 app.use(morgan("common"));
 
 const storage = multer.diskStorage({
-  destination: (req,file,cb)=>{
-    cb(null, "public/images");
+  destination:(req,file,cb)=>{
+    cb(null,"public/images")
   },
   filename: (req,file,cb)=>{
-    cb(null, req.body.name);
-  },
-  
-});
+    cb(null,req.body.name);
+  }
+
+})
 
 const upload = multer({storage});
-app.post("/api/upload", upload.single("file"), (req,res)=>{
+app.post("/api/upload",upload.single("file"),(req,res)=>{
   try{
-    return res.status(200).json("File uploaded successfully");
+    return res.status(200).json("file uploaded successfully")
   }catch(err){
     console.log(err)
   }
-});
+})
 
 
 app.use("/api/users", userRoute);
