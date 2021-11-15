@@ -78,12 +78,12 @@
     position: relative;
   }
   
-  .shareImg{
+.shareImg{
     width: 100%;
     object-fit: cover;
   }
   
-  .shareCancelImg{
+.shareCancelImg{
     position: absolute;
     top: 0;
     right: 20px;
