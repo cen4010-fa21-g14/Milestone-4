@@ -50,7 +50,10 @@ export default function Topbar() {
               user.profilePicture
                 ? PF + user.profilePicture
                 : PF + "person/noAvatar.png"
-            } alt="" className="topbarImg"/>
+            } alt="" className="topbarImg">
+                
+            </img>
+
         </Link>
         </div>
     )
